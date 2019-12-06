@@ -1,10 +1,12 @@
 ## Zhiyan Gao Dissertation LaTex Codes
 
-Included in the Repository are the LaTex files of my 2019 dissertation entitled "Weighing Phonetic Patterns in Non-Native English Speech". You are welcome to use the codes here as a template for your dissertation project.
+Included in this Repository are the LaTeX files for my 2019 dissertation entitled "Weighing Phonetic Patterns in Non-Native English Speech". You are welcome to use the codes here as a template for your dissertation project.
 
 You can check the [zhiyan_diss_main.pdf ](https://github.com/gaozhiyan/Dissertation_Files/blob/master/zhiyan_diss_latex/zhiyan_diss_main.pdf) file first to see how the paper looks. Except two screen-shots I used in Chapters 4 and 5, everything else including all other graphs and the bibliography are done with LaTeX codes. 
 
-The 3 scatter plots in Chapter 6 has a ggplot feeling. It is because I drew these graphs using ggplot in R, and then used the <em>tikzDevice</em> package in R to convert it into .tex files. I did this because I want the font family and font size used in the graphs to be the same as the ones used for the main text. 
+The 3 scatter plots in Chapter 6 have a ggplot feeling. It is because I drew these graphs using <em>ggplot2</em> in R, and then used the <em>tikzDevice</em> package in R to convert them into .tex files. I did this because I want the font family and font size used in the graphs to be the same as the ones used for the main text of the dissertation. 
+
+In Chapter 3, I used a few <em>PRAAT</em> graphs, showing spectrograms and textgrids. The graphs were made in <em>PRAAT</em>. I saved them as .eps files for the same reason I mentioned above.
 
 ### Non-CHSS Students
 
