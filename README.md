@@ -16,17 +16,19 @@ The cover page (i.e., the signature sheet) is for College of Humanities and Soci
 
 First, check [this page](https://en.wikibooks.org/wiki/LaTeX/Linguistics) for LaTeX packages for linguistic purposes.
 
-If you are working on linguistics, chances are you are going to use IPA symbols. You could directly type in IPA symbols in your .tex file. Just remember to compile (typeset) your file with XeLaTeX. PDFLaTeX won't work. If you insist on using PDFLaTex, then you need to use the <em>tipa</em> package.
+If you are working on linguistics, chances are you are going to use IPA symbols. You could directly type in IPA symbols in your .tex file. Just remember to compile (typeset) your file with XeLaTeX. PDFLaTeX won't work. If you insist on using PDFLaTeX, then you need to use the <em>tipa</em> package.
 
 If you are going to draw graphs (bar charts, scatter plots, confusion matrix, etc.), you are going to need the <em>pgfplot</em> package. I have bar graphs in my dissertation. So you can modify the codes to suit your needs. Packages such as <em>qtree</em> is good for drawing syntax trees.
 
-If you don't want to learn how to draw graphs in LaTex, you could actually draw your graph in R using <em>ggplot2</em>. Then convert the graph to a .tex file. Just google <em> gglot2 to latex </em>, there are tutorials on how to do this with the <em>tikzDevice</em> in R.
+If you don't want to learn how to draw graphs in LaTeX, you could actually draw your graph in R using <em>ggplot2</em>. Then convert the graph to a .tex file. Just google <em> gglot2 to latex </em>, there are tutorials on how to do this with the <em>tikzDevice</em> package in R.
 
 ### Other Things
 
 There are a few things you might want to know:
 
-* This is **not** a tutorial on how to use LaTeX. Please consult other sources for tutorials. 
+* This is **NOT** a tutorial on how to use LaTeX. Please consult other sources for tutorials. 
 * The codes here were modified based on the LaTeX template provided by the GMU Library. The original codes are [here](https://library.gmu.edu/udts/resources#templates).
 * The codes here have only been tested on MacBook OSX systems. I have no idea if the codes also run on Windows systems.
-* Used XeLaTeX and BibTeX to compile the files.
+* Use XeLaTeX and BibTeX to compile (typeset) the files. 
+
+<span style="font-size:4em;">Good Luck LaTeXing!</span>
