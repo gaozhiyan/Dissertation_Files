@@ -1,0 +1,15 @@
+label     y x err
+{faɪv $\rightarrow$ faɪ}  1 4.40 0.21
+Match 2 4.43 0.18
+{θ $\rightarrow$ f}  3 4.92 0.40
+{θ $\rightarrow$ t̪}  4 5.14 0.21
+{faɪv $\rightarrow$ faɪvə}  5 5.36 0.35
+{θɪk $\rightarrow$ θik}  6 5.42 0.20
+{aɪ $\rightarrow$ ɑɪ}  7 6.02 0.34
+{aɪ $\rightarrow$ a}  8 6.11 0.33
+{θ $\rightarrow$ s̪t̪}  9 6.35 0.25
+
+
+
+
+

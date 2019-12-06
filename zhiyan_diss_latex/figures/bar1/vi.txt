@@ -1,0 +1,6 @@
+label y x err
+{pʰliz $\rightarrow$ pʰəliz} 1 6.04 0.21
+{æsk $\rightarrow$ æskə} 2 5.99 0.27
+{faɪv $\rightarrow$ faɪvə} 3 5.78 0.38
+{spũnz $\rightarrow$ əspũnz} 4 3.50 0.37
+ 

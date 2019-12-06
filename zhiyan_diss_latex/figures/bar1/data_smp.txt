@@ -1,0 +1,19 @@
+label     y x err
+{ɑ $\rightarrow$ ɔ} 1 3.67 0.34
+{pʰl $\rightarrow$ pl}  2 4.17 0.36
+Match 3 4.44 0.17
+{pʰlæstɪk $\rightarrow$ pʰlæsɪk}  4 4.70 0.27
+{ɪ $\rightarrow$ i}  5 4.90 0.16
+{æ $\rightarrow$ a}  6 5.04 0.45
+{sm $\rightarrow$ zm}  7 5.18 0.35
+{ɑ $\rightarrow$ o}  8 5.53 0.35
+{smɑl $\rightarrow$ smɑɭ}  9 6.54 0.30
+{pʰl $\rightarrow$ pʰɭ}  10 6.98 0.31
+{pʰl $\rightarrow$ pʰɾ}  11 6.98 0.32
+
+
+
+
+
+
+

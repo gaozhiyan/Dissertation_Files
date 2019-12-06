@@ -1,0 +1,11 @@
+label     y x err
+{ũ $\rightarrow$ ʊ}  1 3.38 0.38
+Match 2 3.84 0.17
+{ũ $\rightarrow$ ũ̟}  3 4.17 0.38
+{sɪks $\rightarrow$ siks}  4 4.41 0.23
+{spũnz $\rightarrow$ əspũnz}  5 4.45 0.30
+{spũnz $\rightarrow$ spũz}  6 4.76 0.21
+{spũnz $\rightarrow$ spʰũnz}  7 5.28 0.22
+{spũnz $\rightarrow$ spũnʃ}  8 5.71 0.25
+
+

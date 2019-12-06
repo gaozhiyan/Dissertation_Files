@@ -1,0 +1,37 @@
+
+\begin{tikzpicture}
+  \begin{axis}[
+  title={Mean Accentedness Ratings},
+     % xbar,
+   ytick={1,2,3,4,5,6,7,8,9},
+     y=1cm,
+  bar width=0.7 cm,
+  xmin=0,
+  xmax=7.5,
+    axis y line*=left,
+   axis x line=bottom,
+    tickwidth         = 1pt,
+    enlarge y limits  = 0.1,
+    enlarge x limits  = 0.02,
+  legend style={at={(1.2,0.55)},
+  anchor=north},
+  legend cell align=left,
+      yticklabels from table={figures/results/exp2/data_fth.txt}{label},
+      xtick distance=2,
+      every axis plot/.append style={
+          xbar,
+          bar shift=0pt,
+          fill
+        }
+    ]
+\addplot [fill=red,color=mycolor4,select coords between index={0}{2}] table  [x=x,y=y] {figures/results/exp2/data_fth.txt};
+\addplot [fill=red,color=mycolor1,select coords between index={3}{3}] table  [x=x,y=y] {figures/results/exp2/data_fth.txt};
+
+
+ \addplot [color=black, only marks, mark=o]
+ plot [error bars/.cd, x dir = both, x explicit]
+ table[x =x, y =y, x error =err]{figures/results/exp2/data_fth.txt};
+ \end{axis}
+\node[] at(6.40, 3.25){*};
+
+\end{tikzpicture}

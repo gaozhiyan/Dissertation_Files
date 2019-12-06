@@ -1,0 +1,44 @@
+\begin{tikzpicture}
+  \begin{axis}[
+  title={Mean Accentedness Ratings},
+     % xbar,
+   ytick={1,2,3,4,5,6,7,8,9},
+     y=1cm,
+  bar width=0.7 cm,
+  xmin=0,
+  xmax=7.5,
+    axis y line*=left,
+   axis x line=bottom,
+    tickwidth         = 1pt,
+    enlarge y limits  = 0.1,
+    enlarge x limits  = 0.02,
+  legend style={at={(1.2,0.55)},
+  anchor=north},
+  legend cell align=left,
+      yticklabels from table={figures/bar1/data_plc.txt}{label},
+      xtick distance=2,
+      every axis plot/.append style={
+          xbar,
+          bar shift=0pt,
+          fill
+        }
+    ]
+\addplot [fill=red,color=mycolor3,select coords between index={0}{0}] table  [x=x,y=y] {figures/bar1/data_plc.txt};
+\addplot [fill=red,color=mycolor1,select coords between index={1}{1}] table  [x=x,y=y] {figures/bar1/data_plc.txt};
+\addplot [fill=blue,color=mycolor3,select coords between index={2}{9}] table [x=x, y=y] {figures/bar1/data_plc.txt};
+ \addplot [color=black, only marks, mark=o]
+ plot [error bars/.cd, x dir = both, x explicit]
+ table[x =x, y =y, x error =err]{figures/bar1/data_plc.txt};
+ \end{axis}
+ \node[] at (7.50,8.7) {7.11};
+\node[] at (6.83,7.7) {6.04};
+\node[] at (5.98,6.7) {5.42};
+\node[] at (5.69,5.7) {5.06};
+\node[] at (5.00,4.7) {4.50};
+\node[] at (4.50,3.7) {3.42};
+\node[] at (4.30,2.7) {3.09};
+\node[] at (4.10,1.7) {2.87};
+\node[] at (4.00,0.7) {2.76};
+
+
+\end{tikzpicture}

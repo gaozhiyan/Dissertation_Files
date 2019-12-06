@@ -1,0 +1,6 @@
+label y x err
+\textipa{p\super hli:z-$>$p\super h\underline{\textit{@}}li:z} 1 6.04 0.21
+\textipa{\ae sk-$>$\ae sk\underline{\textit{@}}} 2 5.99 0.27
+\textipa{faIv-$>$faIv\underline{\textit{@}}} 3 5.78 0.38
+\textipa{spunz-$>$\underline{\textit{@}}spunz} 4 3.50 0.37
+ 

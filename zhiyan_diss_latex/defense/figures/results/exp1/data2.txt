@@ -1,0 +1,5 @@
+label y x err
+\textipa{TIk-$>$T\underline{\textit{i}}k} 1 5.57 0.20
+\textipa{p\super hl\ae stIk-$>$p\super hl\ae st\underline{\textit{i}}k} 2 4.90 0.17
+\textipa{sIks-$>$s\underline{\textit{i}}ks} 3 4.42 0.23
+ 

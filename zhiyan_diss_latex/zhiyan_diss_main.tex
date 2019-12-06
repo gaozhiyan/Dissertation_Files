@@ -1,0 +1,319 @@
+%%
+%% GMU LaTeX PhD Dissertation Format Template
+%%
+%% Developed by:
+%%      Daniel O. Awduche and Christopher A. St. Jean
+%%      Communications and Networking Lab
+%%      Dept. of Electrical and Computer Engineering
+%%
+%% Notes on usage can be found in the accompanying USAGE_NOTES.txt file.
+%%
+%%**********************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either
+%% expressed or implied; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall any contributor to this code be liable for any damages
+%% or losses, including, but not limited to, incidental, consequential, or
+%% any other damages, resulting from the use or misuse of any information
+%% contained here.
+%%**********************************************************************
+%%
+%% $Id: GMU_dissertation_template.tex,v 1.7 2007/05/02 02:20:38 Owner Exp $
+%%
+
+\documentclass[11 pt]{report}
+
+%%  The file ``gmudissertation.sty''  is the GMU latex style file and
+%%   should be placed in the same directory as your LaTeX files
+\usepackage{tipa}
+\usepackage{fontspec}
+\usepackage{pgfplots}
+\usepackage{gmudissertation}
+%%
+%% other packages that need to be loaded
+%%
+\usepackage{graphicx}   
+\usepackage{booktabs}      
+\usepackage[T1]{fontenc}           %   for imported graphics
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}                     %%
+\usepackage{amsfonts}                    %%  for AMS mathematics
+\usepackage{amssymb}                     %%
+\usepackage{amsthm}                      %%
+\usepackage[normalem]{ulem}              %   a nice standard underline package
+%\usepackage[noadjust,verbose,sort]{cite} %   arranges reference citations neatly
+\usepackage{setspace}                    %   for line spacing commands
+\usepackage{csquotes}		   % For block quotations
+%\usepackage[sort]{natbib}
+\usepackage{longtable} %force table width
+
+%\usepackage[hidelinks]{hyperref} %hide links in the output pdf file
+
+%
+% Bibliography setup
+%
+
+\usepackage[%style=chicago-authordate,
+			style=authoryear-comp,
+			%style=apa,
+			natbib=true,
+			sortcites,
+			backend=bibtex,
+			doi=false,
+			url=false,
+			isbn=false,
+			maxcitenames=3,
+			maxbibnames=100
+			%backend=biber
+			]{biblatex}
+
+\renewbibmacro{in:}{}
+ % \ifboolexpr{%
+   %  test {\ifentrytype{article}}%
+     
+  %}{}{\printtext{\bibstring{in}\intitlepunct}}%
+%} %suppress "in:" from the references
+\DeclareFieldFormat[article, inbook, incollection, inproceedings, misc, thesis, unpublished]{title}{#1}  %suppress quotations
+
+\addbibresource{zgao.bib}
+% Prune bibliography entries
+\AtEveryBibitem{
+	\clearlist{language}
+	\clearfield{month}
+	\clearfield{address}
+	\clearlist{location}
+}
+
+
+\usepackage{pdflscape} % Rotated PDF
+\usepackage{hyperref} % For URLs
+\usepackage{epigraph} % For an epigraph
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage[xindy,nonumberlist,nogroupskip,nopostdot]{glossaries}
+%\makeglossaries
+
+%\AtEveryCitekey{\clearfield{month}}
+%%%graph settings
+
+\pgfplotsset{compat=1.15} 
+
+
+\pgfplotsset{select coords between index/.style 2 args={
+    x filter/.code={
+        \ifnum\coordindex<#1\def\pgfmathresult{}\fi
+        \ifnum\coordindex>#2\def\pgfmathresult{}\fi
+    }
+}}
+\pgfplotsset{major grid style={dotted,black!50}}
+\definecolor{mycolor1}{RGB}{204,204,204}
+\definecolor{mycolor2}{RGB}{150,150,150}
+\definecolor{mycolor3}{RGB}{99,99,99}
+\definecolor{mycolor4}{RGB}{37,37,37}
+
+%% The file ``mydissertationabbrev.sty'' is an (optional) personalized file that
+%% may contain any and all LaTeX command (re)definitions that will be used
+%% throughout the document
+%\usepackage{mydissertationabbrev}
+
+\beforedoc
+
+\begin{document}
+
+\setmainfont{Times New Roman}
+%% In this section, all of the user-specific fields to be used in the
+%% title pages are set
+\title{Weighing Phonetic Patterns in Non-Native English Speech\\
+            }
+\onelinetitle{Weighing Phonetic Patterns in Non-Native English Speech}
+\author{Zhiyan Gao}
+\degree{Doctor of Philosophy}
+\doctype{Dissertation}
+\dept{English}
+\discipline{Linguistics}
+
+\seconddeg{Master of Arts}
+\seconddegschool{George Mason University}
+\seconddegyear{2012}
+
+\firstdeg{Bachelor of Arts}
+\firstdegschool{Soochow University (Suzhou, China)}
+\firstdegyear{2009}
+
+\degreeyear{2019}
+
+% Note: semester name should be written in its full-form. For example, Fall Semester, not just Fall.
+\degreesemester{Fall Semester} 
+
+\advisor{Dr. Steven Weinberger}
+
+\firstmember{Director}
+
+\secondmember{}
+
+\thirdmember{}
+
+\fourthmember{}
+
+\depthead{Department Chairperson}
+
+\assocdean{Program Director}
+
+\deanITE{Dean}
+
+% The current dean is Lloyd J. Griffiths
+
+%%
+%% Introductory pages
+%%
+
+% Note: The signature sheet is set according to the requirements of the Volgenau School of
+% Information Technology and Engineering. If your college/school requirement is different,
+% please make appropriate changes in the "signaturepage" section of gmudissertation.sty file.
+\signaturepage
+
+\titlepage
+
+% copyright technically optional but should be included in to avoid potential pagination problems
+\copyrightpage
+
+%%
+%%Dedication page
+%%
+%%\dedicationpage
+
+
+
+%%
+%% Acknowledgements
+%%
+
+\acknowledgementspage
+
+
+\noindent I would like to express my deepest gratitude and appreciation to my dissertation committee who allowed an invaluable insight into their knowledge. I am also grateful to George Mason University, which funded this dissertation via a Presidential Scholarship and three summer research grants. 
+
+\bigskip
+
+\noindent I am deeply indebted to my advisor Dr. Steven Weinberger who introduced me to the field of foreign accent and guided me every step of the way as I formed the ideas for the dissertation, designed experiments, collected data, and started writing. I also thank Dr. Weinberger for providing me with an assistantship and full access to the Speech Accent Archive. This dissertation would not have been possible without Dr. Weinberger. 
+
+\bigskip
+
+\noindent I am extremely grateful to Dr. Douglas Wulf for his insightful comments and valuable feedback throughout the development of this dissertation. I would also like to extend my gratitude to Dr. Harim Kwon for helping me understand theories of speech perception and for her advice on acoustic analysis and statistical reasoning. I am grateful to Dr. Dennis Perzanowski for his encouragement and guidance during my early years in graduate school. I greatly appreciate Dr. Perzanowski’s help throughout the years and his invaluable comments on various aspects of this dissertation.
+
+\bigskip
+
+\noindent I sincerely thank Dr. Jennifer Culbertson for introducing me to R and Amazon Mechanical Turk, both of which were utilized in this dissertation. I also would like to thank Dr. Tuuli Morrill for taking me as her research assistant. I thank Dr. Morrill for teaching me various experimental techniques and allowing me to try out my ideas using her research money.   
+
+\bigskip
+
+\noindent I would like to thank Dr. Rias van den Doel (Utrecht University) for his insightful comments on an early draft of this dissertation. I thank my friend Ray Varner for his comments on an early version of the demographic questionnaire designed for this project. I also thank my friend David Blau for providing an outsider's opinion on this project.
+
+\bigskip
+
+\noindent I am grateful to my fellow classmates Dr. Abdullah Alfaifi, Mashael Al-Aloula, Omar Alkhonini, Yuting Guo, and Chiu-ching Tseng for their help and friendship. I also thank my former flatmate Dr. Jitendra Parajuli for sharing his books with me and introducing me to the world of philosophy and rock and roll. 
+
+\bigskip
+
+\noindent I thank my mother Minli Gu, my father Lijun Gao, my grandmother Shuyuan Chen, and my late grandfather Wenfeng Gao for their unconditional love and support. This dissertation is dedicated to them.
+
+
+
+%%
+%% Table of contents, list of tables, and lists of figures
+%%
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+%
+% Glossary
+%
+
+
+%%
+%% Abstract
+%%
+\abstractpage
+Non-native (L2) speakers of English often speak English with a certain degree of foreign ac- cent. While much research has investigated the accentedness of L2 English speech, very few   studies have attempted to rank phonetic patterns in L2 speech according to their perceived foreign accentedness. This dissertation provides accentedness rankings of a large variety of phonetic patterns in L2 English speech. By investigating why some phonetic patterns in L2 English speech are perceptually more accented than others, this dissertation reveals the possible underlying mechanisms that govern foreign accent perception.
+
+This dissertation focuses specifically on the segmental and syllable structural aspects of L2 speech. Two perception experiments were conducted to elicit native (L1) American English raters’ accentedness judgments on 100 L2 stimuli extracted from the Speech Accent Archive \autocite{Weinberger_saa_2019}. In both experiments, raters heard L2 English speech samples and rated foreign accented- ness for each speech sample. Accentedness rankings of various phonetic patterns in L2 speech were therefore obtained. Linear mixed-effects models were implemented to investigate the effect of different types of phonetic patterns on accentedness perception. Prosodic information of the stimuli was accounted for in the least intrusive manner by employing a Dynamic Time Warping approach. Results of the two experiments show that (1) the consonant and syllable structural aspects of L2
+
+\abstractmultiplepage
+%% Be sure to leave a line of whitespace immediately before this line!!!!!
+%% (If this comment segment runs together with the preceeding text, you might
+%%  see the second page of the abstract numbered "0".)
+%%
+%% If the abstract is more than one page, then place this line PRECISELY
+%% at the page break; otherwise, comment it out.  (See note about this line
+%% in the usage notes.)
+%%
+
+\noindent speech carry more weight in accentedness perception than vowels; (2) phonological context affects accentedness perception; (3) raters are aware of which phonetic patterns are allowed in L1 speech, showing that L1 phonetic and phonological knowledge (L1 knowledge) might affect accentedness perception.
+
+A third experiment was further conducted to investigate how raters’ L1 knowledge affected their accentedness judgment. A Naïve Discriminative Learning Model (NDL) was employed to approx- imate raters’ L1 knowledge by examining the co-occurrences of pronunciations (e.g., [æsk]) and lexical outcomes (e.g., “\textit{ask}”) in L1 speech of American English. 100 L2 stimuli were subsequently evaluated against listeners’ L1 knowledge to estimate the degree of dissimilarity (NDL-distance) between L1 and L2 speech samples. The results show that NDL-distance correlates significantly with accentedness ratings, suggesting that L1 knowledge, as approximated by the NDL model, could have affected accentedness judgments.
+
+This dissertation contributes to the field of foreign accent by providing accentedness rankings of various phonetic patterns in L2 speech. In lieu of ad hoc explanations for why some phonetic patterns are more accented than others, this dissertation directly examines how raters’ L1 knowledge affected their accentedness judgments of L2 speech, providing insights into the nature of foreign accent perception.
+
+
+%%
+%%  the main body of the dissertation
+%%
+%%
+%%  the main body of the dissertation
+%%
+
+\startofchapters
+
+%% include the chapters one by one (or paste the chapter text in directly if desired)
+
+\include{chapters/chp1}
+\include{chapters/chp2}
+\include{chapters/chp3}
+\include{chapters/chp4}
+\include{chapters/chp5}
+\include{chapters/chp6}
+\include{chapters/chp7}
+
+
+
+%% Note: appendix is now put before bibliography.
+%% include the following directives if there are any appendices
+\appendix
+\appendixeqnumbering
+\include{appendix/apA}
+\include{appendix/apB}
+\include{appendix/apC}
+%%
+%%  bibliography
+%%
+
+%% list all of the BibTeX files here for the WinEdt project (if applicable)
+%GATHER{bibfile.bib}
+
+%% any bibliography style can be used, but IEEEtran.bst is ideally suited to
+%% electrical engineering references
+
+%\bibliographystyle{IEEEtran}
+%\bibliography{IEEEfull,bibfile}
+
+%\bibliographystyle{biblatex-chicago}
+%\bibliographystyle{chicago}
+%\bibliography{Masad_Dissertation}
+
+\printbibliography
+
+
+%%
+%% curriculum vitae
+%%
+\cvpage
+
+Zhiyan Gao graduated from Soochow University (Suzhou, China) in 2009 with a BA in Chinese and a BA in Economics. He received an MA in English with a concentration in Linguistics from George Mason University in 2012. Zhiyan was the recipient of the 2013 GMU Presidential Scholarship, providing three years of tuition and assistantship.
+
+\end{document}

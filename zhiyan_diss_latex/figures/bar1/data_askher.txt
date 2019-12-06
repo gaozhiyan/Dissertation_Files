@@ -1,0 +1,13 @@
+label     y x err
+{æ $\rightarrow$ æ̞}  1 3.90 0.37
+Match 2 4.08 0.16
+{æ $\rightarrow$ a}  3 4.71 0.26
+{æ $\rightarrow$ æ̝}  4 5.01 0.35
+{æ $\rightarrow$ ɑ}  5 5.73 0.27
+{æsk $\rightarrow$ æs}  6 5.78 0.35
+{ɹ $\rightarrow$ r}  7 5.82 0.17
+{æsk $\rightarrow$ æskə}  8 5.99 0.27
+
+
+
+

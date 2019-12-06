@@ -1,0 +1,5 @@
+label y x err
+{æsk həɹ $\rightarrow$ æs həɹ} 1 5.73 0.27
+{faɪv $\rightarrow$ faɪ} 2 4.75 0.19
+{kʰɑl $\rightarrow$ kʰɑ} 3 3.14 0.25
+ 

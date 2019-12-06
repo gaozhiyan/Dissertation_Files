@@ -1,0 +1,5 @@
+label y x err
+{θɪk $\rightarrow$ θik} 1 5.57 0.20
+{pʰlæstɪk $\rightarrow$ pʰlæstik} 2 4.90 0.17
+{sɪks $\rightarrow$ siks} 3 4.42 0.23
+ 

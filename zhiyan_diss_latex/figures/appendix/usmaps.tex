@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\input{USAmap.tex}
+
+\begin{document}
+
+\begin{tikzpicture}
+\USA[every state={draw=white, ultra thick, fill=black!10},CA={fill=blue},NY={fill=red}]
+
+%\draw[dashed] (TX.center) -- (CA.center) -- (AL.center);
+\node at (CA) {CA};
+\node at (NY) {NY};
+\end{tikzpicture}
+
+\end{document}

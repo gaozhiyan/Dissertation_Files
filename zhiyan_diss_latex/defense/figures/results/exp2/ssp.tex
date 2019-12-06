@@ -1,0 +1,44 @@
+
+\begin{tikzpicture}
+  \begin{axis}[
+  title={Mean Accentedness Ratings},
+     % xbar,
+   ytick={1,2,3,4,5,6,7,8},
+     y=1cm,
+  bar width=0.7 cm,
+  xmin=0,
+  xmax=7.1,
+    axis y line*=left,
+   axis x line=bottom,
+    tickwidth         = 1pt,
+    enlarge y limits  = 0.1,
+    enlarge x limits  = 0.02,
+  legend style={at={(1.2,0.55)},
+  anchor=north},
+  legend cell align=left,
+      yticklabels from table={figures/bar2/data_ssp.txt}{label},
+      xtick distance=2,
+      every axis plot/.append style={
+          xbar,
+          bar shift=0pt,
+          fill
+        }
+    ]
+\addplot [fill=red,color=mycolor3,select coords between index={0}{0}] table  [x=x,y=y] {figures/bar2/data_ssp.txt};
+\addplot [fill=red,color=mycolor1,select coords between index={1}{1}] table  [x=x,y=y] {figures/bar2/data_ssp.txt};
+\addplot [fill=blue,color=mycolor3,select coords between index={2}{8}] table [x=x, y=y] {figures/bar2/data_ssp.txt};
+ \addplot [color=black, only marks, mark=o]
+ plot [error bars/.cd, x dir = both, x explicit]
+ table[x =x, y =y, x error =err]{figures/bar2/data_ssp.txt};
+ \end{axis}
+\node[] at (6.42,7.7) {5.88};
+\node[] at (6.10,6.7) {5.59};
+\node[] at (5.80,5.7) {5.29};
+\node[] at (5.64,4.7) {5.07};
+\node[] at (5.11,3.7) {4.59};
+\node[] at (4.90,2.7) {4.24};
+\node[] at (4.69,1.7) {4.22};
+\node[] at (4.63,0.7) {4.95};
+
+
+\end{tikzpicture}

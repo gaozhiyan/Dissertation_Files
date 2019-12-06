@@ -1,0 +1,6 @@
+label y x err
+\textipa{\ae sk h@r-$>$\ae s\underline{ } h@r} 1 5.73 0.27
+\textipa{faIv-$>$faI\underline{ }} 2 4.75 0.19
+\textipa{\ae sk h@r-$>$\ae sk \underline{ }@r} 3 4.61 0.41
+\textipa{k\super hAl-$>$k\super hA\underline{ }} 4 3.14 0.25
+ 

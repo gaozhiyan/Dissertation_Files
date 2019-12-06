@@ -1,0 +1,112 @@
+    raters, gender, age, birthplace, current residence, L1 \\
+    rater1, female, 20   , california, california, English \\
+    rater2, male , 26   , texas, texas, English \\
+    rater3, female, 34   , washington, washington, English \\
+    rater4, male , 23   , ohio , ohio , English \\
+    rater5, male , 31   , new york, new york, English \\
+    rater6, male , 20   , nevada, nevada, English \\
+    rater7, male , 42   , michigan, michigan, English \\
+    rater8, male , 31   , louisiana, louisiana, English \\
+    rater9, male , 23   , minnesota, minnesota, English \\
+    rater10, male , 28   , california, california, English \\
+    rater11, female, 21   , texas, texas, English \\
+    rater12, male , 33   , pennsylvania, pennsylvania, English \\
+    rater13, male , 57   , indiana, indiana, English \\
+    rater14, male , 34   , missouri, missouri, English \\
+    rater15, male , 22   , nevada, nevada, English \\
+    rater16, female, 35   , north carolina, north carolina, English \\
+    rater17, male , 66   , new jersey, new jersey, English \\
+    rater18, female, 24   , california, california, English \\
+    rater19, male , 25   , new jersey, new jersey, English \\
+    rater20, male , 24   , texas, texas, English \\
+    rater21, male , 43   , oregon, oregon, English \\
+    rater22, female, 34   , georgia, georgia, English \\
+    rater23, male , 40   , kentucky, kentucky, English \\
+    rater24, female, 53   , new york, new york, English \\
+    rater25, male , 23   , california, california, English \\
+    rater26, male , 30   , new york, new york, English \\
+    rater27, female, 24   , california, california, English \\
+    rater28, male , 48   , california, california, English \\
+    rater29, female, 53   , pennsylvania, pennsylvania, English \\
+    rater30, female, 56   , california, california, English \\
+    rater31, NA   , 41   , north carolina, north carolina, English \\
+    rater32, female, 61   , texas, texas, English \\
+    rater33, male , 51   , missouri, missouri, English \\
+    rater34, female, 39   , ohio , ohio , English \\
+    rater35, female, 27   , washington, washington, English \\
+    rater36, female, 43   , new york, new york, English \\
+    rater37, male , 30   , california, california, English \\
+    rater38, male , 38   , tennessee, tennessee, English \\
+    rater39, male , 37   , illinois, illinois, English \\
+    rater40, female, 33   , washington, washington, English \\
+    rater41, female, 44   , arizona, arizona, English \\
+    rater42, male , 25   , new york, new york, English \\
+    rater43, female, 36   , oregon, oregon, English \\
+    rater44, female, 26   , arizona, arizona, English \\
+    rater45, male , 35   , new jersey, new jersey, English \\
+    rater46, male , 30   , new york, new york, English \\
+    rater47, female, 60   , florida, florida, English \\
+    rater48, male , 45   , maryland, maryland, English \\
+    rater49, female, 29   , new york, new york, English \\
+    rater50, female, 26   , georgia, georgia, English \\
+    rater51, female, 34   , new jersey, new jersey, English \\
+    rater52, female, 29   , new york, new york, English \\
+    rater53, female, 53   , new jersey, new jersey, English \\
+    rater54, female, 28   , new york, new york, English \\
+    rater55, male , 31   , new hampshire, new hampshire, English \\
+    rater56, female, 27   , massachusetts, massachusetts, English \\
+    rater57, male , 26   , connecticut, connecticut, English \\
+    rater58, female, 33   , pennsylvania, pennsylvania, English \\
+    rater59, male , 41   , texas, texas, English \\
+    rater60, female, 30   , colorado, colorado, English \\
+    rater61, male , 26   , michigan, michigan, English \\
+    rater62, male , 24   , massachusetts, massachusetts, English \\
+    rater63, male , 55   , north carolina, north carolina, English \\
+    rater64, female, 33   , massachusetts, massachusetts, English \\
+    rater65, female, 58   , texas, texas, English \\
+    rater66, female, 38   , california, california, English \\
+    rater67, female, 32   , south carolina, south carolina, English \\
+    rater68, male , 39   , north carolina, north carolina, English \\
+    rater69, male , 35   , texas, texas, English \\
+    rater70, female, 64   , south carolina, south carolina, English \\
+    rater71, male , 31   , california, california, English \\
+    rater72, female, 51   , arizona, arizona, English \\
+    rater73, female, 27   , kentucky, kentucky, English \\
+    rater74, male , 31   , north carolina, north carolina, English \\
+    rater75, male , 26   , florida, florida, English \\
+    rater76, female, 27   , california, california, English \\
+    rater77, female, 42   , pennsylvania, pennsylvania, English \\
+    rater78, NA   , 57   , maine , maine , English \\
+    rater79, female, 55   , california, california, English \\
+    rater80, male , 51   , florida, florida, English \\
+    rater81, female, 28   , new york, new york, English \\
+    rater82, female, 40   , new jersey, new jersey, English \\
+    rater83, female, 33   , kansas, kansas, English \\
+    rater84, female, 25   , california, california, English \\
+    rater85, female, 30   , florida, florida, English \\
+    rater86, female, 66   , ohio , ohio , English \\
+    rater87, male , 60   , new york, new york, English \\
+    rater88, female, 61   , florida, florida, English \\
+    rater89, female, 44   , kansas, kansas, English \\
+    rater90, female, 38   , iowa , iowa , English \\
+    rater91, female, 43   , california, california, English \\
+    rater92, female, 65   , california, california, English \\
+    rater93, female, 22   , new mexico, new mexico, English \\
+    rater94, female, 63   , florida, florida, English \\
+    rater95, male , 21   , florida, florida, English \\
+    rater96, female, 28   , oklahoma, oklahoma, English \\
+    rater97, female, 41   , florida, florida, English \\
+    rater98, male , 54   , massachusetts, massachusetts, English \\
+    rater99, female, 25   , tennessee, tennessee, English \\
+    rater100, male , 42   , missouri, missouri, English \\
+    rater101, female, 34   , washington, washington, English \\
+    rater102, female, 24   , georgia, georgia, English \\
+    rater103, female, 23   , washington, washington, English \\
+    rater104, female, 24   , arizona, arizona, English \\
+    rater105, male , 53   , california, california, English \\
+    rater106, female, 33   , arkansas, arkansas, English \\
+    rater107, female, 32   , california, california, English \\
+    rater108, female, 34   , georgia, georgia, English \\
+
+  
+

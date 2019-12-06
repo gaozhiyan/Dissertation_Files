@@ -1,0 +1,40 @@
+%insert
+\begin{tikzpicture}
+  \begin{axis}[
+  title={Mean Accentedness Ratings},
+     % xbar,
+   ytick={1,2,3,4},
+     y=-1.2cm,
+  bar width=0.8cm,
+  xmin=0,
+  xmax=6.5,
+     %y axis line style = { opacity = 0 },
+     axis y line*=left,
+   axis x line=bottom,
+    tickwidth         = 1pt,
+    enlarge y limits  = 0.2,
+    enlarge x limits  = 0.02,
+  legend style={at={(1.2,0.55)},
+  anchor=north},
+  legend cell align=left,
+      yticklabels from table={figures/bar1/vi.txt}{label},
+      xtick distance=2,
+      every axis plot/.append style={
+          xbar,
+          bar shift=0pt,
+          fill
+        }
+    ]
+\addplot [fill=red,color=mycolor1,select coords between index={0}{0}] table  [x=x,y=y] {figures/bar1/vi.txt};
+\addplot [fill=blue,color=mycolor3,select coords between index={1}{2}] table [x=x, y=y] {figures/bar1/vi.txt};
+\addplot [fill=orange,color=mycolor2,select coords between index={3}{3}] table [x=x, y=y] {figures/bar1/vi.txt};
+ \addplot [color=black, only marks, mark=o]
+ plot [error bars/.cd, x dir = both, x explicit]
+ table[x =x, y =y, x error =err]{figures/bar1/vi.txt};
+  \legend{Anaptyxis,Paragoge,Prothesis}
+ 
+ \end{axis}
+   \node[] at (6.7, 4.3) {*};
+ \node[] at (6.7, 3.1) {*};
+ \node[] at (6.6, 1.9) {*};
+\end{tikzpicture}

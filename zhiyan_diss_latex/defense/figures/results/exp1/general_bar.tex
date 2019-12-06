@@ -1,0 +1,43 @@
+\begin{center}
+\begin{tikzpicture}
+  \begin{axis}[
+  ylabel={Mean Ratings},
+width=9.2cm,
+   height = 7cm,
+    ytick distance=1,
+        nodes near coords,
+      major x tick style = transparent,
+    ybar=3*\pgflinewidth,
+      bar width=30pt,
+      ymajorgrids = true,
+      symbolic x coords={Match,Vowel,Syllable,Consonant},
+      xtick ={Match,Vowel, Syllable, Consonant},
+      scaled y ticks = false,
+        legend style={at={(1.2,0.55)},
+  anchor=north},
+  legend cell align=left,
+      enlarge x limits=0.20,
+      ymin=0,
+       every axis plot/.append style={
+          ybar,
+          bar shift=0pt,
+          fill
+        }
+    ]
+\addplot [fill=mycolor4,error bars/.cd, y dir=both, y explicit,error bar style=black] 
+  coordinates {
+          (Match, 3.94) += (0,0.08) -= (0,0.08)};
+\addplot [fill=mycolor3,error bars/.cd, y dir=both, y explicit,error bar style=black] 
+  coordinates {
+          (Vowel, 4.69) += (0,0.08) -= (0,0.08)};
+\addplot [fill=mycolor2,error bars/.cd, y dir=both, y explicit,error bar style=black] 
+  coordinates {
+          (Syllable, 4.96) += (0,0.08) -= (0,0.08)};
+ \addplot [fill=mycolor1,error bars/.cd, y dir=both, y explicit,error bar style=black] 
+  coordinates {
+          (Consonant, 5.66) += (0,0.08) -= (0,0.08)};
+ \legend{Match,Vowel,Syllable,Consonant}
+ \end{axis}
+\end{tikzpicture}
+\end{center}
+

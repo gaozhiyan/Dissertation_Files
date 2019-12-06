@@ -1,0 +1,15 @@
+label     y x err
+{ɑ $\rightarrow$ ɔ}  1 2.76 0.16
+Match 2 2.87 0.36
+{pʰl $\rightarrow$ pʰ}  3 3.09 0.28
+{kʰɑl $\rightarrow$ kʰɑ}  4 3.42 0.36
+{ɑ $\rightarrow$ o}  5 4.50 0.21
+{z $\rightarrow$ s}  6 5.06 0.35
+{kʰ $\rightarrow$ k}  7 5.42 0.23
+{pʰl $\rightarrow$ pʰəl}  8 6.04 0.20
+{pʰl $\rightarrow$ pl}  9 7.11 0.33
+
+
+
+
+
