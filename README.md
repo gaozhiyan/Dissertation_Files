@@ -18,7 +18,7 @@ First, check [this page](https://en.wikibooks.org/wiki/LaTeX/Linguistics) for La
 
 If you are working on linguistics, chances are you are going to use IPA symbols. You could directly type in IPA symbols in your .tex file. Just remember to compile (typeset) your file with XeLaTeX. PDFLaTeX won't work. If you insist on using PDFLaTeX, then you need to use the <em>tipa</em> package.
 
-If you are going to draw graphs (bar charts, scatter plots, confusion matrix, etc.), you are going to need the <em>pgfplot</em> package. I have bar graphs in my dissertation. So you can modify the codes to suit your needs. Packages such as <em>qtree</em> is good for drawing syntax trees.
+If you are going to draw graphs (bar charts, scatter plots, confusion matrix, etc.), you are going to need the <em>pgfplot</em> package. I have bar graphs in my dissertation. So you can modify the codes to suit your needs. Packages such as <em>forest</em> and <em>qtree</em> are good for drawing syntax trees.
 
 If you don't want to learn how to draw graphs in LaTeX, you could actually draw your graph in R using <em>ggplot2</em>. Then convert the graph to a .tex file. Just google <em> gglot2 to latex </em>, there are tutorials on how to do this with the <em>tikzDevice</em> package in R.
 
