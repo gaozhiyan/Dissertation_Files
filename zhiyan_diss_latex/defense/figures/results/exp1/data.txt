@@ -1,4 +1,0 @@
-label     y x err
-\textipa{p\super hl-$>$pl}  1 6.93 0.22
-\textipa{p\super hl-$>$pl} 2 4.77 0.35
-\textipa{k\super h-$>$k}  3 4.17 0.26
