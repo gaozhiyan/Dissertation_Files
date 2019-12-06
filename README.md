@@ -2,7 +2,7 @@
 
 Included in this Repository are the LaTeX files for my 2019 dissertation entitled "Weighing Phonetic Patterns in Non-Native English Speech". The format has been approved by the [University Dissertation & Thesis Services](https://library.gmu.edu/udts) at George Mason University. You are welcome to use the codes here as a template for your dissertation project.
 
-You can check the [zhiyan_diss_main.pdf ](https://github.com/gaozhiyan/Dissertation_Files/blob/master/zhiyan_diss_latex/zhiyan_diss_main.pdf) file first to see how the paper looks. Except two screen-shots I used in Chapters 4 and 5, everything else including all other graphs and the bibliography are done with LaTeX codes. 
+You can check the [zhiyan_diss_main.pdf ](https://github.com/gaozhiyan/Dissertation_Files/blob/master/zhiyan_diss_latex/zhiyan_diss_main.pdf) file first to see how the paper looks. Except two screen-shots I used in Chapters 4 and 5, everything else including all other graphs and the bibliography were done with LaTeX codes. 
 
 The 3 scatter plots in Chapter 6 have a ggplot feeling. It is because I drew these graphs using <em>ggplot2</em> in R, and then used the <em>tikzDevice</em> package in R to convert them into .tex files. I did this because I want the font family and font size used in the graphs to be the same as the ones used for the main text of the dissertation. 
 
@@ -26,7 +26,7 @@ If you don't want to learn how to draw graphs in LaTex, you could actually draw 
 
 There are a few things you might want to know:
 
-* This is **not** a tutorial of how to use LaTeX. Please consult other sources for tutorials. 
+* This is **not** a tutorial on how to use LaTeX. Please consult other sources for tutorials. 
 * The codes here were modified based on the LaTeX template provided by the GMU Library. The original codes are [here](https://library.gmu.edu/udts/resources#templates).
 * The codes here have only been tested on MacBook OSX systems. I have no idea if the codes also run on Windows systems.
 * Used XeLaTeX and BibTeX to compile the files.
