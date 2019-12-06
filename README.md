@@ -30,6 +30,6 @@ There are a few things you might want to know:
 * The codes here were modified based on the LaTeX template provided by the GMU Library. The original codes are [here](https://library.gmu.edu/udts/resources#templates).
 * The codes here have only been tested on MacBook OSX systems. I have no idea if the codes also run on Windows systems.
 * Use XeLaTeX and BibTeX to compile (typeset) the files. 
-<p align="center">
+<h2 align="center">
 <span style="font-size:10em;">Good Luck LaTeXing!</span>
-</p>
+</h2>
