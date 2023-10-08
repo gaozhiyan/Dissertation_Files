@@ -1,35 +1,34 @@
-## Zhiyan Gao Dissertation LaTex Codes
+# Zhiyan Gao Dissertation LaTeX Templates
 
-Included in this Repository are the LaTeX files for my 2019 dissertation entitled "Weighing Phonetic Patterns in Non-Native English Speech". The format has been approved by the [University Dissertation & Thesis Services](https://library.gmu.edu/udts) at George Mason University. You are welcome to use the codes here as a template for your dissertation project.
+This repository contains LaTeX files for my 2019 dissertation titled "Weighing Phonetic Patterns in Non-Native English Speech." The format has received approval from [George Mason University's University Dissertation & Thesis Services](https://library.gmu.edu/udts). Feel free to use these LaTeX templates as a foundation for your own dissertation project.
 
-You can check the [zhiyan_diss_main.pdf ](https://github.com/gaozhiyan/Dissertation_Files/blob/master/zhiyan_diss_latex/zhiyan_diss_main.pdf) file first to see how the paper looks. Except two screen-shots I used in Chapters 4 and 5, everything else including all other graphs and the bibliography were done with LaTeX codes. 
+Before diving into the LaTeX code, you can preview the appearance of the paper by visiting the [zhiyan_diss_main.pdf](https://github.com/gaozhiyan/Dissertation_Files/blob/master/zhiyan_diss_latex/zhiyan_diss_main.pdf) file. With the exception of two screenshots used in Chapters 4 and 5, everything else, including graphs and the bibliography, has been created using LaTeX code.
 
-The 3 scatter plots in Chapter 6 have a ggplot feeling. It is because I drew these graphs using <em>ggplot2</em> in R, and then used the <em>tikzDevice</em> package in R to convert them into .tex files. I did this because I don't want to learn how to draw this kind of scatter plots with LaTeX. It is just easier for me to do it in R. 
+In Chapter 6, you'll notice that the three scatter plots have a 'ggplot' aesthetic. I generated these graphs using the 'ggplot2' package in R and then converted them into .tex files using the 'tikzDevice' package in R. This approach proved more convenient than learning how to create these scatter plots directly in LaTeX.
 
-In Chapter 3, I used a few <em>PRAAT</em> graphs, showing spectrograms and textgrids. The graphs were made in <em>PRAAT</em>. I saved them as .eps files so that I don't have to worry about the resolusion of the graphs.
+Chapter 3 features a few 'PRAAT' graphs displaying spectrograms and textgrids. These graphs were generated in 'PRAAT' and saved as .eps files to ensure optimal resolution.
 
-### Non-CHSS Students
+### For Students Outside of CHSS
 
-The cover page (i.e., the signature sheet) is for College of Humanities and Social Sciences (CHSS). Other colleges/schools have different cover page formants. See the GMU Library [UDTS resources](https://library.gmu.edu/udts/resources) page for details. The citation formats might be different in your field of study. To use a different citation format, you might want to check the documentation of the <em>biblatex</em> package.
+Please note that the cover page (signature sheet) is specifically designed for the College of Humanities and Social Sciences (CHSS). Other colleges/schools may have different cover page formats. Refer to the GMU Library [UDTS resources](https://library.gmu.edu/udts/resources) page for further details. Additionally, citation formats may vary depending on your field of study. If you require a different citation format, consult the documentation of the 'biblatex' package.
 
-### For students in the Linguistics program
+### For Linguistics Students
 
-First, check [this page](https://en.wikibooks.org/wiki/LaTeX/Linguistics) for LaTeX packages for linguistic purposes.
+If you're pursuing linguistics, you'll likely work with IPA symbols. You can directly input IPA symbols into your .tex file, but be sure to compile (typeset) your document using XeLaTeX, as PDFLaTeX won't support it. If you prefer PDFLaTeX, consider using the 'tipa' package.
 
-If you are working on linguistics, chances are you are going to use IPA symbols. You could directly type in IPA symbols in your .tex file. Just remember to compile (typeset) your file with XeLaTeX. PDFLaTeX won't work. If you insist on using PDFLaTeX, then you need to use the <em>tipa</em> package.
+For those who need to create graphs (bar charts, scatter plots, confusion matrices, etc.), the 'pgfplots' package is essential. My dissertation includes bar graphs, so you can adapt the provided code to meet your requirements. Packages like 'forest' and 'qtree' are useful for drawing syntax trees.
 
-If you are going to draw graphs (bar charts, scatter plots, confusion matrix, etc.), you are going to need the <em>pgfplot</em> package. I have bar graphs in my dissertation. So you can modify the codes to suit your needs. Packages such as <em>forest</em> and <em>qtree</em> are good for drawing syntax trees.
+If you'd rather not learn how to create graphs in LaTeX, you can create them in R using 'ggplot2' and then convert them to .tex files. Search for "ggplot2 to LaTeX" online for tutorials on how to do this using the 'tikzDevice' package in R.
 
-If you don't want to learn how to draw graphs in LaTeX, you could actually draw your graph in R using <em>ggplot2</em>. Then convert the graph to a .tex file. Just google <em> gglot2 to latex </em>, there are tutorials on how to do this with the <em>tikzDevice</em> package in R.
+### Other Considerations
 
-### Other Things
+Here are a few additional points to keep in mind:
 
-There are a few things you might want to know:
+- This is **NOT** a LaTeX tutorial. Please consult other sources for tutorials and guides.
+- The provided LaTeX templates have been adapted from the GMU Library's LaTeX template. The original templates can be found [here](https://library.gmu.edu/udts/resources#templates).
+- These LaTeX templates have been tested on MacBook OSX systems. Compatibility with Windows systems is uncertain.
+- To compile (typeset) the files, use XeLaTeX and BibTeX.
 
-* This is **NOT** a tutorial on how to use LaTeX. Please consult other sources for tutorials. 
-* The codes here were modified based on the LaTeX template provided by the GMU Library. The original codes are [here](https://library.gmu.edu/udts/resources#templates).
-* The codes here have only been tested on MacBook OSX systems. I have no idea if the codes also run on Windows systems.
-* Use XeLaTeX and BibTeX to compile (typeset) the files. 
 <h2 align="center">
-<span style="font-size:10em;">Good Luck LaTeXing!</span>
+<span style="font-size:10em;">Best of luck with your dissertion! Let's go Patriots!</span>
 </h2>
